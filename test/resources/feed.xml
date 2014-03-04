@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+      <creation-date refresh-frequency='PT1H'>2014-03-02T17:26:49-08:00</creation-date>
+     <category>current observations and forecast</category>
+    </product>
+    <source>
+      <production-center>San Francisco Bay Area/Monterey, CA</production-center>
+      <credit>http://www.wrh.noaa.gov/mtr</credit>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+    </source>
+  </head>
+  <data type="forecast">
+
+  <location>
+    <location-key>point1</location-key>
+    <point latitude="37.73" longitude="-122.66"/>
+    <area-description>14NM W San Francisco CA</area-description>
+    <height datum="mean sea level" height-units="feet">0</height>
+  </location>
+<moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?lat=37.73&amp;lon=-122.66</moreWeatherInformation>
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p12h-n9-1</layout-key>
+      <start-valid-time period-name="Tonight">2014-03-02T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Monday">2014-03-03T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2014-03-03T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2014-03-04T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Tuesday Night">2014-03-04T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2014-03-05T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2014-03-05T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2014-03-06T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Thursday Night">2014-03-06T18:00:00-08:00</start-valid-time>
+  </time-layout>
+
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p24h-n5-1</layout-key>
+      <start-valid-time period-name="Tonight">2014-03-02T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2014-03-03T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Tuesday Night">2014-03-04T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2014-03-05T18:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Thursday Night">2014-03-06T18:00:00-08:00</start-valid-time>
+  </time-layout>
+
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p24h-n4-2</layout-key>
+      <start-valid-time period-name="Monday">2014-03-03T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2014-03-04T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2014-03-05T06:00:00-08:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2014-03-06T06:00:00-08:00</start-valid-time>
+  </time-layout>
+
+
+  <parameters applicable-location="point1">
+
+    <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n5-1">
+      <name>Daily Minimum Temperature</name>
+        <value>52</value>
+        <value>53</value>
+        <value>53</value>
+        <value>52</value>
+        <value>53</value>
+    </temperature>
+
+    <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n4-2">
+      <name>Daily Maximum Temperature</name>
+        <value>55</value>
+        <value>55</value>
+        <value>54</value>
+        <value>53</value>
+    </temperature>
+
+    <probability-of-precipitation  type="12 hour" units="percent" time-layout="k-p12h-n9-1">
+      <name>12 Hourly Probability of Precipitation</name>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+    </probability-of-precipitation>
+
+    <weather time-layout="k-p12h-n9-1">
+      <name>Weather Type, Coverage, Intensity</name>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+        <weather-conditions weather-summary=" "/>
+    </weather>
+
+    <conditions-icon type="forecast-NWS" time-layout="k-p12h-n9-1">
+      <name>Conditions Icon</name>        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_nra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_ra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_nra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_bkn.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_nbkn.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_ra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_nra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_shra.jpg</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/m_nsct.jpg</icon-link>
+    </conditions-icon>
+
+    <wordedForecast time-layout="k-p12h-n9-1" dataSource="mtrNetcdf" wordGenerator="markMitchell">
+      <name>Text Forecast</name>
+        <text>S wind 11 to 13 kt. A slight chance of rain before 4am.   W swell 6 to 7 ft at 12 seconds. Wind waves around 1 ft.</text>
+        <text>S wind 11 to 15 kt. Rain likely after 10am.   W swell 3 to 5 ft at 12 seconds  building to  at 19 seconds . Wind waves 1 to 2 ft.</text>
+        <text>S wind 8 to 18 kt becoming W after midnight. Rain likely, mainly before 10pm.   W swell 7 ft at 18 seconds. Wind waves 1 to 2 ft.</text>
+        <text>Variable winds 5 kt or less. Partly sunny. W swell 7 to 8 ft. Wind waves around 1 ft.</text>
+        <text>Variable winds 5 kt or less. Mostly cloudy. W swell 6 to 8 ft. Wind waves around 1 ft.</text>
+        <text>SE wind around 6 kt becoming S in the morning. A chance of rain.   W swell 5 to 6 ft. Wind waves around 1 ft.</text>
+        <text>S wind 8 to 12 kt. Rain, mainly before 4am.   W swell 7 ft. Wind waves around 1 ft.</text>
+        <text>SW wind 5 to 8 kt becoming variable and less than 5 kt in the morning. A slight chance of showers.   W swell 9 ft. Wind waves around 1 ft.</text>
+        <text>NW wind 7 to 9 kt. Partly cloudy. W swell 9 ft. Wind waves around 1 ft.</text>
+    </wordedForecast>
+
+</parameters>
+</data>
+<data type="current observations">
+	<location>
+		<location-key>point1</location-key>
+		<point latitude="37.76" longitude="-122.83"/>
+		<area-description>SAN FRANCISCO - 18NM West of San Francisco, PZ</area-description>
+		<height datum="mean sea level" height-units="feet">0</height>
+	</location>
+<nearby-observations>http://www.ndbc.noaa.gov/radial_search.php?lat1=37.74000N&amp;lon1=122.65W&amp;uom=E&amp;dist=50</nearby-observations>
+<past-observations>http://www.ndbc.noaa.gov/station_page.php?station=46026</past-observations>
+	<time-layout time-coordinate="local">	<layout-key>k-p1h-n1-1</layout-key>	<start-valid-time period-name="current">2014-03-02T16:50:00-08:00</start-valid-time>	</time-layout>	<parameters applicable-location="point1">	<temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">	<value>NA</value>	</temperature>	<weather time-layout="k-p1h-n1-1">	<name>Weather Type, Coverage, Intensity</name>	<weather-conditions weather-summary=""/>	<weather-conditions>	<value>	<visibility units="statute miles">NA</visibility>	</value>	</weather-conditions>	</weather>	<direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">	<value>N</value>	</direction>	<wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">	<value>0</value>	</wind-speed>	<wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">	<value>6</value>	</wind-speed>		<pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">			<value>NA</value>		</pressure>		<temperature type="air" units="Fahrenheit" time-layout="k-p1h-n1-1">			<value>55</value>		</temperature>		<temperature type="water" units="Fahrenheit" time-layout="k-p1h-n1-1">			<value>NA</value>		</temperature>		<wave type="height-direction" units="Feet" time-layout="k-p1h-n1-1">			<value>5.9NW</value>		</wave>		<wave type="dominant-period" units="Seconds" time-layout="k-p1h-n1-1">			<value>11</value>		</wave>	</parameters></data></dwml>
